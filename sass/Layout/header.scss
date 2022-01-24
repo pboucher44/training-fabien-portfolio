@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+}
+
+.translate {
+    top: 5%;
+    right: 5%;
+    font-family: Raleway;
+
+    a {
+        text-decoration: none;
+        color: $primary-color;
+    }
+
+    .active {
+        font-weight: bold;
+    }
+
+    position: fixed;
+    color: $primary-color;
+}

@@ -1,0 +1,35 @@
+.rounds-color {
+    width: 100%;
+    height: max-content;
+}
+
+.round {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 90%;
+}
+
+.rounds-color :nth-child(1) {
+    background-color: #3C4D58;
+}
+
+.rounds-color :nth-child(2) {
+    background-color: #4D577C;
+}
+
+.rounds-color :nth-child(3) {
+    background-color: #845C91;
+}
+
+.rounds-color :nth-child(4) {
+    background-color: #C25C88;
+}
+
+.rounds-color :nth-child(5) {
+    background-color: #EB6D67;
+}
+
+.rounds-color :nth-child(6) {
+    background-color: #F19336;
+}

@@ -1,0 +1,139 @@
+main {
+    height: 100%;
+
+    font-family: Raleway;
+    font-style: normal;
+}
+
+section {
+    height: 100%;
+    width: 50%;
+}
+
+#welcome {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .presentation-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 78%;
+    
+        h1 {
+            color: $primary-color;
+            margin: 0;
+            font-weight: 800;
+            font-size: 5vw;
+            line-height: 56px;
+        }
+    
+        h2 {
+            font-family: Raleway;
+            font-weight: 400;
+            font-size: 3vw;
+            font-style: normal;
+        }
+    
+        .corean-char-name {
+            color: $primary-color;
+            font-weight: 800;
+        }
+    }
+
+    .centered-horitontally {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+
+        div {
+            width: 100%;
+        }
+    }
+
+    button {
+        display: block;
+
+        background: #ED6D67;
+        border: 1px solid #ED6D67;
+        color: white;
+        font-family: 'Raleway';
+        border-radius: 115px;
+
+        width: 40%;
+        height: 60px;
+        font-size: 2vw;
+    }
+
+    svg {
+        margin: 1%;
+    }
+}
+
+#about {
+    color: white;
+    background: linear-gradient(77.78deg, #3C4D58 10.59%, #4D577C 90.44%);
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    .presentation-content {
+        width: 30%;
+    }
+
+    h2 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+
+        font-size: 3vw;
+
+        position: relative;
+        z-index: 0;
+        letter-spacing: 0.2em;
+        margin-bottom: 20%;
+    }
+
+    h2::before {
+        content: "정보";
+
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: 900;
+        letter-spacing: 0.2em;
+
+        position: absolute;
+        display: block;
+        z-index: -1;
+
+        text-align: center;
+        color: rgba(255, 255, 255, 0.15);
+        font-size: 6.5vw;
+
+        top:-55%;
+        text-align: center;
+        width: 100%;
+    }
+
+    p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1vw;
+        line-height: 27px;
+    }
+
+    b {
+        font-weight: bold;
+    }
+}
+
