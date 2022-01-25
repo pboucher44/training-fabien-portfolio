@@ -1,7 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&family=Raleway:wght@400;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&family=Poppins:wght@500&family=Raleway:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&family=Poppins:wght@300;500&family=Raleway:wght@400;600;700;800&display=swap");
 nav {
   display: flex;
   position: fixed;
@@ -32,9 +30,10 @@ nav {
 }
 
 .round {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   display: inline-block;
+  margin-right: 10px;
   border-radius: 90%;
 }
 
@@ -85,19 +84,20 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 78%;
+  margin-top: 6%;
+  height: 65%;
 }
 #welcome .presentation-content h1 {
   color: #ED6D67;
   margin: 0;
   font-weight: 800;
-  font-size: 5vw;
+  font-size: 96px;
   line-height: 56px;
 }
 #welcome .presentation-content h2 {
   font-family: Raleway;
   font-weight: 400;
-  font-size: 3vw;
+  font-size: 48px;
   font-style: normal;
 }
 #welcome .presentation-content .corean-char-name {
@@ -108,6 +108,7 @@ section {
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   flex-direction: column;
   width: 50%;
 }
@@ -123,7 +124,7 @@ section {
   border-radius: 115px;
   width: 40%;
   height: 60px;
-  font-size: 2vw;
+  font-size: 36px;
 }
 #welcome svg {
   margin: 1%;
@@ -145,7 +146,7 @@ section {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 3vw;
+  font-size: 36px;
   position: relative;
   z-index: 0;
   letter-spacing: 0.2em;
@@ -162,7 +163,7 @@ section {
   z-index: -1;
   text-align: center;
   color: rgba(255, 255, 255, 0.15);
-  font-size: 6.5vw;
+  font-size: 80px;
   top: -55%;
   text-align: center;
   width: 100%;
@@ -171,11 +172,203 @@ section {
   font-family: Poppins;
   font-style: normal;
   font-weight: 300;
-  font-size: 1vw;
+  font-size: 18px;
   line-height: 27px;
 }
 #about b {
   font-weight: bold;
+}
+
+#experiences {
+  background: white;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#experiences .presentation-content {
+  width: 30%;
+}
+#experiences h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  position: relative;
+  z-index: 0;
+  letter-spacing: 0.2em;
+  margin-bottom: 20%;
+}
+#experiences h2::before {
+  content: "이력서";
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  text-align: center;
+  color: rgba(102, 102, 102, 0.15);
+  font-size: 80px;
+  top: -55%;
+  text-align: center;
+  width: 100%;
+}
+#experiences svg {
+  width: 30%;
+}
+#experiences h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-size: 24px;
+  margin-bottom: 0;
+  color: #C25C88;
+}
+#experiences h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #ABA69D;
+  margin-top: 2%;
+  margin-bottom: 0;
+}
+#experiences .experience {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#experiences p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #666666;
+}
+#experiences .carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#experiences .carousel .button-carousel {
+  border: none;
+  border-radius: 90%;
+  width: 11px;
+  height: 11px;
+  background-color: rgba(81, 93, 122, 0.15);
+  margin: 3px;
+}
+#experiences .carousel .active {
+  background-color: #C25C88;
+}
+#experiences a {
+  text-decoration: none;
+  align-self: end;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  color: #C25C88;
+  font-size: 18px;
+}
+
+#services {
+  background: white;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#services .presentation-content {
+  width: 30%;
+}
+#services h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  position: relative;
+  z-index: 0;
+  letter-spacing: 0.2em;
+  margin-bottom: 20%;
+}
+#services h2::before {
+  content: "이력서";
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  text-align: center;
+  color: rgba(102, 102, 102, 0.15);
+  font-size: 80px;
+  top: -55%;
+  text-align: center;
+  width: 100%;
+}
+#services p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #666666;
+}
+
+#contact {
+  background: white;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#contact .presentation-content {
+  width: 30%;
+}
+#contact h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  position: relative;
+  z-index: 0;
+  letter-spacing: 0.2em;
+  margin-bottom: 20%;
+}
+#contact h2::before {
+  content: "이력서";
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  text-align: center;
+  color: rgba(102, 102, 102, 0.15);
+  font-size: 80px;
+  top: -55%;
+  text-align: center;
+  width: 100%;
+}
+#contact p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #666666;
 }
 
 /*# sourceMappingURL=style.css.map */
