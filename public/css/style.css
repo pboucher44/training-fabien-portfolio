@@ -67,6 +67,10 @@ main {
   font-style: normal;
 }
 
+nav .active {
+  color: red;
+}
+
 section {
   height: 100%;
   width: 50%;
