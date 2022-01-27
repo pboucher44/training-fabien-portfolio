@@ -6,8 +6,44 @@ main {
 }
 
 nav {
+
+    li {
+        list-style-type: none;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 0.2em;
+
+        color: #666666;
+
+        padding-left: 10px;
+    }
+
+    p {
+        display: none;
+    }
+
     .active {
-        color: red;
+        font-weight: 500;
+        font-size: 30px;
+        color: #666666;
+
+        border-left: solid #F19336 3px;
+        padding-left: 7px;
+        
+        p {
+            display: block;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+
+            color: #F19336;
+
+            margin-bottom: 0;
+        }
     }
 }
 
