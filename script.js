@@ -19,16 +19,16 @@ function calculActiveMenu() {
 
     const pourcentageScroll = window.scrollY * 100 / window.innerHeight;
 
-    if (pourcentageScroll < 100) {
+    if (pourcentageScroll < 50) {
         return MENU_HOME.classList.add('active');
     }
-    if (pourcentageScroll < 200) {
+    if (pourcentageScroll < 150) {
         return MENU_ABOUT.classList.add('active');
     }
-    if (pourcentageScroll < 300) {
+    if (pourcentageScroll < 250) {
         return MENU_RESUME.classList.add('active');
     }
-    if (pourcentageScroll < 400) {
+    if (pourcentageScroll < 350) {
         return MENU_SERVICES.classList.add('active');
     }
     return MENU_CONTACT.classList.add('active');

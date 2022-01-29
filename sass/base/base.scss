@@ -7,6 +7,10 @@ main {
 
 nav {
 
+    span {
+        mix-blend-mode: difference;
+    }
+
     li {
         list-style-type: none;
 
@@ -30,7 +34,7 @@ nav {
         font-size: 30px;
         color: #666666;
 
-        border-left: solid #F19336 3px;
+        
         padding-left: 7px;
         
         p {
@@ -40,11 +44,46 @@ nav {
             font-weight: 300;
             font-size: 13px;
 
-            color: #F19336;
-
             margin-bottom: 0;
         }
+        
+        &#menu-home {
+            border-left: solid #F19336 3px;
+
+            p {
+                color: #F19336;
+            }
+        }
+        &#menu-about {
+            border-left: solid #EB6D67 3px;
+
+            p {
+                color: #EB6D67;
+            }
+        }
+        &#menu-resume {
+            border-left: solid #C25C88 3px;
+
+            p {
+                color: #C25C88;
+            }
+        }
+        &#menu-services {
+            border-left: solid #845C91 3px;
+
+            p {
+                color: #845C91;
+            }
+        }
+        &#menu-contact {
+            border-left: solid #4D577C 3px;
+
+            p {
+                color: #4D577C;
+            }
+        }
     }
+    
 }
 
 section {
@@ -129,6 +168,7 @@ section {
     text-align: center;
     justify-content: center;
     align-items: center;
+    mix-blend-mode: screen;
 
     .presentation-content {
         width: 30%;

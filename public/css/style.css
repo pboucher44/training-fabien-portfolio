@@ -67,6 +67,9 @@ main {
   font-style: normal;
 }
 
+nav span {
+  mix-blend-mode: difference;
+}
 nav li {
   list-style-type: none;
   font-family: Poppins;
@@ -84,7 +87,6 @@ nav .active {
   font-weight: 500;
   font-size: 30px;
   color: #666666;
-  border-left: solid #F19336 3px;
   padding-left: 7px;
 }
 nav .active p {
@@ -93,8 +95,37 @@ nav .active p {
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
-  color: #F19336;
   margin-bottom: 0;
+}
+nav .active#menu-home {
+  border-left: solid #F19336 3px;
+}
+nav .active#menu-home p {
+  color: #F19336;
+}
+nav .active#menu-about {
+  border-left: solid #EB6D67 3px;
+}
+nav .active#menu-about p {
+  color: #EB6D67;
+}
+nav .active#menu-resume {
+  border-left: solid #C25C88 3px;
+}
+nav .active#menu-resume p {
+  color: #C25C88;
+}
+nav .active#menu-services {
+  border-left: solid #845C91 3px;
+}
+nav .active#menu-services p {
+  color: #845C91;
+}
+nav .active#menu-contact {
+  border-left: solid #4D577C 3px;
+}
+nav .active#menu-contact p {
+  color: #4D577C;
 }
 
 section {
@@ -168,6 +199,7 @@ section {
   text-align: center;
   justify-content: center;
   align-items: center;
+  mix-blend-mode: screen;
 }
 #about .presentation-content {
   width: 30%;
